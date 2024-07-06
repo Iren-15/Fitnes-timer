@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fitness Timer</h1>
+
+        <div>
+        <h3 class="h-work">Work in minutes:</h3>
+        <div class="item-input">
+        <button class="less-work"> - </button>
+        <input id="work-time" type="text" value="0.1">
+        <button class="more-work">+</button>
+        </div>
+        </div>
+        
+        <div>
+        <h3 class="h-rest">Rest in minutes:</h3>
+        <div class="item-input">
+        <button class="less-rest">-</button>
+        <input id="rest-time" type="text" value="0.05">
+        <button class="more-rest">+</button>
+        </div>
+        </div>
+
+        <div>
+            <h3 class="h-sets">Sets:</h3>
+            <div class="item-input">
+            <button class="less-sets">-</button>
+            <input id="sets" type="text" value="1">
+            <button class="more-sets">+</button>
+            </div>
+        </div>
+
+        <button class="btn-start">Start</button>
+        <p class="finished">Finished!</p>
+        <button class="btn-repeat">Repeat</button>
+
+        <div class="container">
+            <p class="txt"></p>
+            <p class="timer">0:0</p>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>    
+</body>
+</html>

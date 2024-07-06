@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fitness Timer</h1>
+
+      <div>
+        <h3 class="h-work">Work in minutes:</h3>
+        <div class="item-input">
+          <button class="less-work">-</button>
+          <input id="work-time" type="text" value="1" />
+          <button class="more-work">+</button>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="h-break">Break in minutes:</h3>
+        <div class="item-input">
+          <button class="less-break">-</button>
+          <input id="break-time" type="text" value="1" />
+          <button class="more-break">+</button>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="h-sets">Sets:</h3>
+        <div class="item-input">
+          <button class="less-sets">-</button>
+          <input id="sets" type="text" value="1" />
+          <button class="more-sets">+</button>
+        </div>
+      </div>
+
+      <button class="btn-start">Start</button>
+      <p class="finished">Finished!</p>
+      <div class="container">
+        <p class="par-action"></p>
+        <p class="timer">0:0</p>
+        <p class="par-set"></p>
+      </div>
+      <div class="container">
+             <button class="btn-repeat">Repeat</button> 
+      </div>
+    </div>
+       
+
+    <audio
+      id="audio"
+      src="https://cdn.glitch.global/3bd74fb0-d5fb-4c63-9326-7c9d372eb7f5/Spell.mp3?v=1675941722869"
+    ></audio>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
